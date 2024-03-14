@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boreal system - Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/CSS/style_login.css">
 </head>
 <body>
     <section class="container-login">
         <form action="#" method="POST">
+            <div class="d-flex justify-content-center">
+                <img src="assets/imagens/FreeSample-Vectorizer-io-WhatsApp_Image_2024-02-14_at_2.39.07_PM-removebg-preview.svg" alt="logo" style="width: 120px;" class="img-fluid">
+            </div>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>
@@ -18,7 +22,7 @@
                 <!-- Aqui você pode adicionar sua lógica para gerar o captcha -->
                 <!-- Exemplo: <img src="captcha_image.php" alt="Captcha"> -->
             </div>
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" class="btn btn-primary">
         </form>
     </section>
 </body>
