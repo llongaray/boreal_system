@@ -1,0 +1,57 @@
+/* Estilos para a seção principal */
+.main-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+/* Container para a lista de colaboradores */
+.colaboradores-container {
+    margin-top: 20px;
+    width: 500px;
+    background-color: #f9f9f9; /* Fundo quase branco */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
+}
+
+.colaboradores-container h2 {
+    margin-top: 0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Adiciona separador abaixo do título */
+}
+
+.colaboradores-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.colaboradores-list li {
+    height: 40px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.colaboradores-list li:not(:last-child) {
+    border-bottom: 1px solid #ccc; /* Adiciona separador abaixo de cada item, exceto o último */
+}
+
+/* Estilos para as informações dos colaboradores */
+.colaboradores-list li span {
+    margin-right: 10px;
+}
+
+.nome {
+    font-weight: bold;
+}
+
+.cpf {
+    color: #666;
+}
+
+.data-registro {
+    font-style: italic;
+}
