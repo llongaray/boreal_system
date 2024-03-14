@@ -118,3 +118,42 @@ const areaChart = new ApexCharts(
   areaChartOptions
 );
 areaChart.render();
+
+
+
+window.addEventListener('DOMContentLoaded', function() {
+      // Selecione todos os itens da lista de colaboradores
+      const items = document.querySelectorAll('.colaboradores-list li');
+      let maxWidth = 0;
+
+      // Itere sobre os itens para encontrar a largura máxima
+      items.forEach(function(item) {
+          const width = item.getBoundingClientRect().width;
+          if (width > maxWidth) {
+              maxWidth = width;
+          }
+      });
+
+      // Ajuste a largura do contêiner para ser igual à largura máxima dos itens
+      const container = document.querySelector('.colaboradores-container');
+      container.style.width = maxWidth + 'px';
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+  // Selecione todos os spans dentro de li
+  const spans = document.querySelectorAll('.colaboradores-list li span');
+  let maxWidth = 0;
+
+  // Itere sobre os spans para encontrar a maior largura
+  spans.forEach(function(span) {
+      const width = span.getBoundingClientRect().width;
+      if (width > maxWidth) {
+          maxWidth = width;
+      }
+  });
+
+  // Defina a largura mínima para cada span
+  spans.forEach(function(span) {
+      span.style.minWidth = (maxWidth + 3) + 'px'; // Adiciona 3 pixels extras
+  });
+});

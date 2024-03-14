@@ -1,0 +1,26 @@
+/* Estilos para o formulário de registro financeiro */
+
+.register-form {
+    max-width: 600px; /* Define a largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+.register-form .form-control {
+    width: 100%; /* Define a largura total para os inputs/selects */
+    margin-bottom: 10px; /* Adiciona espaço entre os inputs/selects */
+}
+
+.register-form .form-row:last-child .form-group {
+    margin-bottom: 0; /* Remove a margem inferior do último grupo de formulários */
+}
+
+.register-form .btn-primary {
+    width: 100%; /* Define a largura total para o botão de enviar */
+}
+
+.main-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza verticalmente */
+}
