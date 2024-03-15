@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamplates</title>
+    <link rel="shortcut icon" href="/assets/media/imgs/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .box {
+            border: 1px solid #a3a0a0;
+            border-radius: 0 15px;
+            padding: 8px;
+            margin: 20px;
+        }
+
+        .container {
+            .box:hover {
+                background-color: rgb(10, 127, 223);
+                .item {
+                    color: aliceblue;
+                }
+            }
+        }
+
+        .container .box .item {
+            text-align: center;
+            justify-items: center;
+            text-decoration: none;
+            color: inherit;
+        }
+        .box-img {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box-img img {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-img">
+        <img src="assets/media/imgs/FreeSample-Vectorizer-io-WhatsApp_Image_2024-02-14_at_2.39.07_PM-removebg-preview.svg" alt="logo">
+    </div>
+    <section class="container">
+        <div class="box">
+            <a href="templates/login.html" target="_blank" rel="noopener noreferrer" class="item">Painel Login</a>
+        </div>
+        <div class="box">
+            <a href="templates/dashboard.html" target="_blank" rel="noopener noreferrer" class="item">Painel Dashboard</a>
+        </div>
+        <div class="box">
+            <a href="templates/register_colab.html" target="_blank" rel="noopener noreferrer" class="item">Painel Register_colab</a>
+        </div>
+        <div class="box">
+            <a href="templates/financeiro.html" target="_blank" rel="noopener noreferrer" class="item">Painel Financeiro</a>
+        </div>
+    </section>
+</body>
+</html>

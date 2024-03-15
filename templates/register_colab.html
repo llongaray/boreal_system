@@ -15,9 +15,10 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="static/CSS/style_index.css">
-    <link rel="stylesheet" href="static/CSS/style_register.css">
-    <link rel="stylesheet" href="static/CSS/style-lister.css">
+    <link rel="stylesheet" href="\static\styles\style_index.css">
+    <link rel="stylesheet" href="\static\styles\style_register.css">
+    <link rel="stylesheet" href="\static\styles\style-lister.css">
+    <link rel="shortcut icon" href="/assets/media/imgs/favicon.svg" type="image/x-icon">
 </head>
 <body>
 <div class="grid-container">
@@ -26,13 +27,13 @@
     <aside id="sidebar">
         <div class="sidebar-title">
             <div class="sidebar-brand">
-                <!-- Substituí o texto do título e removi o ícone da prancheta -->
-                <!-- Adicionei um espaço reservado para o logo da empresa em SVG -->
+                <!-- Substituído "Boreal System" por "Money" -->
+                <!-- Adicionado um espaço reservado para o logo da empresa em SVG -->
                 <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <!-- Aqui você pode adicionar o código SVG do logo da empresa -->
                 </svg>
                 <!-- Fim do espaço reservado para o logo da empresa -->
-                Boreal System
+                Money System
             </div>
             <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
         </div>
@@ -53,6 +54,12 @@
                     <span class="material-icons-outlined">attach_money</span> Financeiro
                 </a>
             </li>
+            <!-- Adicionada nova opção no menu: PIX -->
+            <li class="sidebar-list-item">
+                <a href="pix.html">
+                    <span class="material-icons-outlined">payment</span> PIX
+                </a>
+            </li>
             <li class="sidebar-list-item">
                 <a href="#">
                     <span class="material-icons-outlined">settings</span> Configurações
@@ -61,7 +68,7 @@
         </ul>
         
     </aside>
-    <!-- End Sidebar -->
+  <!-- End Sidebar -->
 
     <!-- Main -->
     <main class="main-container">
@@ -110,44 +117,8 @@
         <section class="section-container">
             <h2>Lista de Colaboradores Registrados</h2>
             <div class="colaboradores-container">
-                <ul class="colaboradores-list" style="max-height: 200px; overflow-y: auto;">
-                    <!-- Exemplo 1: -->
-                    <li>
-                        <span class="nome">John Doe</span>
-                        <span class="cpf">123.456.789-10</span>
-                        <span class="data-registro">01.01.2001</span>
-                    </li>
-                    <!-- Exemplo 2: -->
-                    <li>
-                        <span class="nome">Jane Smith</span>
-                        <span class="cpf">987.654.321-00</span>
-                        <span class="data-registro">05.05.2005</span>
-                    </li>
-                    <!-- Exemplo 3: -->
-                    <li>
-                        <span class="nome">Michael Johnson</span>
-                        <span class="cpf">555.666.777-11</span>
-                        <span class="data-registro">10.10.2010</span>
-                    </li>
-                    <!-- Exemplo 4: -->
-                    <li>
-                        <span class="nome">Emily Brown</span>
-                        <span class="cpf">333.444.555-22</span>
-                        <span class="data-registro">15.03.2015</span>
-                    </li>
-                    <!-- Exemplo 5: -->
-                    <li>
-                        <span class="nome">David Garcia</span>
-                        <span class="cpf">111.222.333-44</span>
-                        <span class="data-registro">20.07.2020</span>
-                    </li>
-                    <!-- Exemplo 6: -->
-                    <li>
-                        <span class="nome">Ana Silva</span>
-                        <span class="cpf">777.888.999-55</span>
-                        <span class="data-registro">25.12.2025</span>
-                    </li>
-                    <!-- Adicione mais itens conforme necessário -->
+                <ul id="lista-colaboradores" class="colaboradores-list" style="max-height: 200px; overflow-y: auto;">
+                    <!-- Itens da lista serão adicionados dinamicamente aqui -->
                 </ul>
                 
             </div>
@@ -163,6 +134,6 @@
 <!-- ApexCharts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
 <!-- Custom JS -->
-<script src="static/JS/script.js"></script>
+<script src="\static\scripts\script.js"></script>
 </body>
 </html>
