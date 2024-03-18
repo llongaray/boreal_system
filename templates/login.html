@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boreal system - Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/styles/style_login.css">
-    <link rel="shortcut icon" href="/assets/media/imgs/favicon.svg" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="\assets\static\styles\public\general.css">
+    <link rel="stylesheet" href="\assets\static\styles\public\menu.css">
+    <link rel="stylesheet" href="\assets\static\styles\login\login.css">
+
+
+    <link rel="shortcut icon" href="\assets\media\imgs\favicon.png" type="image/x-icon">
+
 </head>
 <body>
     <section class="container-login">
         <form action="dashboard.html" method="POST">
-            <div class="d-flex justify-content-center">
-                <img src="../assets/media/imgs/FreeSample-Vectorizer-io-WhatsApp_Image_2024-02-14_at_2.39.07_PM-removebg-preview.svg" alt="logo" style="width: 120px;" class="img-fluid">
+            <div class="d-flex justify-content-center overflow" style="height: 100px">
+                <img src="\assets\media\imgs\logo.png" alt="logo" style="width: 180px; object-fit: cover; margin: -20px;" class="img-fluid">
             </div>
+            
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password:</label>

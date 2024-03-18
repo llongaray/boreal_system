@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -15,27 +15,22 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="\static\styles\style_index.css">
-    <link rel="stylesheet" href="\static\styles\style_register.css">
-    <link rel="stylesheet" href="\static\styles\style-lister.css">
-    <link rel="shortcut icon" href="/assets/media/imgs/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="\assets\static\styles\public\general.css">
+    <link rel="stylesheet" href="\assets\static\styles\public\menu.css">
+    <link rel="stylesheet" href="\assets\static\styles\public\lister.css">
+    <link rel="stylesheet" href="\assets\static\styles\register\register.css">
+
+    <link rel="shortcut icon" href="\assets\media\imgs\favicon.png" type="image/x-icon">
+
 </head>
 <body>
 <div class="grid-container">
-
     <!-- Sidebar -->
     <aside id="sidebar">
         <div class="sidebar-title">
             <div class="sidebar-brand">
-                <!-- Substituído "Boreal System" por "Money" -->
-                <!-- Adicionado um espaço reservado para o logo da empresa em SVG -->
-                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Aqui você pode adicionar o código SVG do logo da empresa -->
-                </svg>
-                <!-- Fim do espaço reservado para o logo da empresa -->
-                Money System
+                <span>Money System</span>
             </div>
-            <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
         </div>
 
         <ul class="sidebar-list">
@@ -46,29 +41,32 @@
             </li>
             <li class="sidebar-list-item active">
                 <a href="register_colab.html">
-                    <span class="material-icons-outlined">person</span> Registro Colab
+                    <span class="material-icons-outlined">account_circle</span> Registro Colab
                 </a>
             </li>
-            <li class="sidebar-list-item">
-                <a href="financeiro.html">
-                    <span class="material-icons-outlined">attach_money</span> Financeiro
-                </a>
-            </li>
-            <!-- Adicionada nova opção no menu: PIX -->
-            <li class="sidebar-list-item">
-                <a href="pix.html">
-                    <span class="material-icons-outlined">payment</span> PIX
-                </a>
+            <li class="sidebar-list-item-categoria">
+                <span class="material-icons-outlined">attach_money</span> Financeiro
+                <ul> <!-- Lista de subitens -->
+                    <li>
+                        <a href="register_values.html">
+                            <span class="material-icons-outlined">person</span> Registro
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pix.html">
+                            <span class="material-icons-outlined">payment</span> PIX
+                        </a>
+                    </li>
+                </ul>
             </li>
             <li class="sidebar-list-item">
                 <a href="#">
                     <span class="material-icons-outlined">settings</span> Configurações
                 </a>
             </li>
-        </ul>
-        
+        </ul>   
     </aside>
-  <!-- End Sidebar -->
+    <!-- End Sidebar -->
 
     <!-- Main -->
     <main class="main-container">
